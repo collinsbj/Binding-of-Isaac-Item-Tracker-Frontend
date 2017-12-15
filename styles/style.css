@@ -1,0 +1,78 @@
+main {
+  margin: 1rem;
+}
+
+body {
+  background-color: #b3e5fc;
+}
+
+.itemPic {
+  filter: drop-shadow(2px 2px 2px #222);
+}
+
+.itemPic {
+  margin: 0.5rem;
+  height: 35px;
+  width: auto;
+}
+
+@keyframes disappear {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.openingPic {
+  position: absolute;
+  animation: 4s 0s 1 disappear;
+  opacity: 0;
+  margin: auto;
+  margin-top: 64px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 75%;
+  height: auto;
+}
+
+
+
+#modalImg {
+  height: 65px;
+  width: auto;
+}
+
+.selected {
+  opacity: 0.25;
+}
+
+.btndiv {
+  display: flex;
+  justify-content: center;
+}
+
+span {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.displayNone {
+  display: none;
+}
+
+ul.futureList li {
+list-style: circle;
+color: dimGray;
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>UBIIT</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav-wrapper grey darken-4">
+          <a href="#!" class="brand-logo">New Item</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="./tracker.html">Tracker</a>
+            </li>
+            <li>
+              <a href="./itemList.html">Item List</a>
+            </li>
+            <li>
+              <a href="./newItem.html">Add New Item</a>
+            </li>
+            <li>
+              <a href="./index.html">About</a>
+            </li>
+          </ul>
+          <ul class="side-nav blue lighten-1" id="mobile-demo">
+            <li>
+              <a href="./tracker.html">Tracker</a>
+            </li>
+            <li>
+              <a href="./itemList.html">Item List</a>
+            </li>
+            <li>
+              <a href="./newItem.html">Add New Item</a>
+            </li>
+            <li>
+              <a href="./index.html">About</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+
+      <div class="row">
+        <form class="col s12" id="fieldBoxes">
+          <div class="row">
+            <div class="input-field col s12">
+              <input name="itemName" type="text" class="validate">
+              <label for="itemName">Name</label>
+            </div>
+            <div class="input-field col s12">
+              <input name="id" type="number" class="validate">
+              <label for="id">ID</label>
+            </div>
+          </div>
+          <div class="input-field col s12">
+            <select name="itemType">
+              <option value="" disabled="disabled" selected="selected">Item Type</option>
+              <option value="active">Active</option>
+              <option value="passive">Passive</option>
+            </select>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <select name="collectionStatus">
+                <option value="" disabled="disabled" selected="selected">Collection Status</option>
+                <option value="true">Collected</option>
+                <option value="false">Not Collected</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s12">
+              <input name="imageURL" type="url" class="validate">
+              <label for="imageURL">Image URL</label>
+            </div>
+          </div>
+        </form>
+        <form action="#" id="itemPoolCheck">
+          <div class="row col s6">
+            <p>
+              <input name="angelRoom" value="Angel Room" type="checkbox" id="angelRoom"/>
+              <label for="angelRoom">Angel Room</label>
+            </p>
+            <p>
+              <input name="beggar" value="Beggar" type="checkbox" id="beggar"/>
+              <label for="beggar">Beggar</label>
+            </p>
+            <p>
+              <input name="bombBum" value="Bomb Bum" type="checkbox" id="bombBum"/>
+              <label for="bombBum">Bomb Bum</label>
+            </p>
+            <p>
+              <input name="bossRoom" value="Boss Room" type="checkbox" id="bossRoom"/>
+              <label for="bossRoom">Boss Room</label>
+            </p>
+            <p>
+              <input name="challengeRoom" value="Challenge Room" type="checkbox" id="challengeRoom"/>
+              <label for="challengeRoom">Challenge Room</label>
+            </p>
+            <p>
+              <input name="curseRoom" value="Curse Room" type="checkbox" id="curseRoom"/>
+              <label for="curseRoom">Curse Room</label>
+            </p>
+            <p>
+              <input name="devilBeggar" value="Devil Beggar" type="checkbox" id="devilBeggar"/>
+              <label for="devilBeggar">Devil Beggar</label>
+            </p>
+            <p>
+              <input name="devilRoom" value="Devil Room" type="checkbox" id="devilRoom"/>
+              <label for="devilRoom">Devil Room</label>
+            </p>
+          </div>
+          <div class="row col s6">
+            <p>
+              <input name="goldChest" value="Gold Chest" type="checkbox" id="goldChest"/>
+              <label for="goldChest">Gold Chest</label>
+            </p>
+            <p>
+              <input name="keyMaster" value="Key Master" type="checkbox" id="keyMaster"/>
+              <label for="keyMaster">Key Master</label>
+            </p>
+            <p>
+              <input name="library" value="Library" type="checkbox" id="library"/>
+              <label for="library">Library</label>
+            </p>
+            <p>
+              <input name="redChest" value="Red Chest" type="checkbox" id="redChest"/>
+              <label for="redChest">Red Chest</label>
+            </p>
+            <p>
+              <input name="secretRoom" value="Secret Room" type="checkbox" id="secretRoom"/>
+              <label for="secretRoom">Secret Room</label>
+            </p>
+            <p>
+              <input name="shop" value="Shop" type="checkbox" id="shop"/>
+              <label for="shop">Shop</label>
+            </p>
+            <p>
+              <input name="treasureRoom" value="Treasure Room" type="checkbox" id="treasureRoom"/>
+              <label for="treasureRoom">Treasure Room</label>
+            </p>
+          </div>
+          <div class="btndiv row col s12">
+            <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </form>
+      </div>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+      <script src="./src/newItem.js"></script>
+    </main>
+  </body>
+</html>
