@@ -1,6 +1,7 @@
 THE ULTIMATE BINDING OF ISAAC ITEM TRACKER!
 
 Link to site: https://bindingofisaactracker.firebaseapp.com/
+Link to backend: https://github.com/collinsbj/Binding-of-Isaac-Item-Tracker-Backend
 
 Welcome to the only Binding of Isaac item tracker you'll ever need, thoughtfully named: The Ultimate Binding of Isaac Item Tracker, aka UBIIT (yoo-bit)! New to town? Let's take a quick tour, shall we?
 What is The Binding of Isaac?
