@@ -24,7 +24,7 @@ function getFormData() {
 }
 
 function postData() {
-  fetch("https://hidden-castle-51466.herokuapp.com/toAPI", {
+  fetch("https://hidden-castle-51466.herokuapp.com/addItem", {
     method: "post",
     body: JSON.stringify(getFormData()),
     headers: new Headers({

@@ -12,16 +12,13 @@
     <header>
       <nav>
         <div class="nav-wrapper grey darken-4">
-          <a href="#!" class="brand-logo">Tracker</a>
+          <a href="#!" class="brand-logo">Item Tracker</a>
           <a href="#" data-activates="mobile-demo" class="button-collapse">
             <i class="material-icons">menu</i>
           </a>
           <ul class="right hide-on-med-and-down">
             <li>
-              <a href="./tracker.html">Tracker</a>
-            </li>
-            <li>
-              <a href="./itemList.html">Item List</a>
+              <a href="./tracker.html">Item Tracker</a>
             </li>
             <li>
               <a href="./newItem.html">Add New Item</a>
@@ -32,10 +29,7 @@
           </ul>
           <ul class="side-nav blue lighten-1" id="mobile-demo">
             <li>
-              <a href="./tracker.html">Tracker</a>
-            </li>
-            <li>
-              <a href="./itemList.html">Item List</a>
+              <a href="./tracker.html">Item Tracker</a>
             </li>
             <li>
               <a href="./newItem.html">Add New Item</a>
@@ -47,10 +41,39 @@
         </div>
       </nav>
     </header>
+    <div class="itemTop">
+        <a id="edit" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">mode_edit</i></a>
+      <div>
+        <a class="dropdown-button btn black" href="#" data-activates="dropdown1">Sort By</a>
+        <ul id="dropdown1" class="dropdown-content">
+          <li>
+            <a id="id" href="./tracker.html">ID</a>
+          </li>
+          <li>
+            <a id="name" href="./tracker.html">Name</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <main>
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-      <script src="./src/tracker.js"></script>
+      <div id="modal1" class="modal">
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+        <div class="modal-content">
+          <h4 id="itemName">Modal Header</h4>
+          <img id="modalImg" src="./placeholder" alt="">
+          <ul>
+            <li id="itemType"></li>
+            <li id="collected"></li>
+            <li id="itemPool"></li>
+            <li id="itemDescription"></li>
+          </ul>
+        </div>
+      </div>
     </main>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./src/tracker.js"></script>
   </body>
 </html>

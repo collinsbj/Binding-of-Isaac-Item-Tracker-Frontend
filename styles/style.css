@@ -76,3 +76,14 @@ ul.futureList li {
 list-style: circle;
 color: dimGray;
 }
+
+.itemTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 1rem -.5rem 1rem;
+}
+
+#id, #name {
+  color: black;
+}
