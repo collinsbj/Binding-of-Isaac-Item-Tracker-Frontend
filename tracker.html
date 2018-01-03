@@ -29,51 +29,133 @@
           </ul>
           <ul class="side-nav blue lighten-1" id="mobile-demo">
             <li>
-              <a href="./tracker.html">Item Tracker</a>
+              <a href="./tracker.html">
+                <i class="material-icons left"><img src="https://d1u5p3l4wpay3k.cloudfront.net/bindingofisaacre_gamepedia/8/82/Goat_Head_Icon.png?version=2b9c280ec751643c75e7da3aedf4a754"/></i>Item Tracker</a>
             </li>
             <li>
-              <a href="./newItem.html">Add New Item</a>
+              <a href="./newItem.html">
+                <i class="material-icons let"><img src="https://d1u5p3l4wpay3k.cloudfront.net/bindingofisaacre_gamepedia/1/1a/Abaddon_Icon.png?version=98fd6c722e8c8e6ff7cada304c7f0ec1"/></i>Add New Item</a>
             </li>
             <li>
-              <a href="./index.html">About</a>
+              <a href="./index.html">
+                <i class="material-icons let"><img src="https://d1u5p3l4wpay3k.cloudfront.net/bindingofisaacre_gamepedia/c/ce/Lil_Monstro_Icon.png?version=d696a82560535eb3738fbd999aa9e6f0"/></i>About</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
-    <div class="itemTop">
-        <a id="edit" class="btn-floating btn-large waves-effect waves-light black"><i class="material-icons">mode_edit</i></a>
-      <div>
-        <a class="dropdown-button btn black" href="#" data-activates="dropdown1">Sort By</a>
-        <ul id="dropdown1" class="dropdown-content">
-          <li>
-            <a id="id" href="./tracker.html">ID</a>
+    <div class="paneContainer">
+
+      <div class="leftPane grey darken-4">
+        <div class="leftPaneContent">
+
+        <div>
+          <img id="modalImgLeft" src="./placeholder" alt="" class="left">
+          <h4 id="itemNameLeft" class="center"></h4>
+          <h5 id="flavorTextLeft" class="center"></h5>
+        </div>
+        <ul id="leftPaneUl" class="displayNone">
+          <li id="itemIdLeft"></li>
+          <li id="itemTypeLeft"></li>
+          <li id="collectedLeft"></li>
+          <li id="itemPoolLeft" class="bold">Item Pool:
+            <ul>
+              <li></li>
+            </ul>
           </li>
-          <li>
-            <a id="name" href="./tracker.html">Name</a>
+          <li id="itemDescriptionLeft">Description:
+            <ul>
+              <li></li>
+            </ul>
           </li>
+          <li id="unlockLeft"></li>
+          <li id="transformationLeft"></li>
+          <li id="rechargeLeft"></li>
         </ul>
       </div>
-    </div>
-    <main>
-      <div id="modal1" class="modal">
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+      </div>
+      <div class="rightPane">
+
+        <div class="itemTop">
+          <a id="edit" class="btn-floating btn-large waves-effect waves-light black">
+            <i class="material-icons">mode_edit</i>
+          </a>
+          <div>
+            <a class="dropdown-button btn black" href="#" data-activates="dropdown1">Sort By</a>
+            <ul id="dropdown1" class="dropdown-content">
+              <li>
+                <a id="id" href="./tracker.html">ID</a>
+              </li>
+              <li>
+                <a id="name" href="./tracker.html">Name</a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-content">
-          <h4 id="itemName">Modal Header</h4>
-          <img id="modalImg" src="./placeholder" alt="">
-          <ul>
-            <li id="itemType"></li>
-            <li id="collected"></li>
-            <li id="itemPool"></li>
-            <li id="itemDescription"></li>
-          </ul>
+        <main>
+          <div id="modal1" class="modal grey darken-4">
+            <div class="modal-footer grey darken-4">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+            </div>
+            <div class="modal-content">
+              <div class="modalTop">
+                <img id="modalImg" src="./placeholder" alt="" class="left">
+                <h4 id="itemName" class="center">Modal Header</h4>
+                <h5 id="flavorText" class="center">Flavor Text</h5>
+              </div>
+              <ul>
+                <li id="itemId"></li>
+                <li id="itemType"></li>
+                <li id="collected"></li>
+                <li id="itemPool" class="bold">Item Pool:
+                  <ul>
+                    <li></li>
+                  </ul>
+                </li>
+                <li id="itemDescription">Description:
+                  <ul>
+                    <li></li>
+                  </ul>
+                </li>
+                <li id="unlock"></li>
+                <li id="transformation"></li>
+                <li id="recharge"></li>
+              </ul>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <footer class="page-footer grey darken-4">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Thanks!</h5>
+            <p class="grey-text text-lighten-4">Thanks to
+              <a href="bindingofisaacrebirth.gamepedia.com">bindingofisaacrebirth.gamepedia.com</a>
+              and
+              <a href="platinumgod.co.uk">platinumgod.co.uk</a>.</p>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Links</h5>
+            <ul>
+              <li>
+                <a class="grey-text text-lighten-3" href="./index.html">About</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </main>
+      <div class="footer-copyright">
+        <div class="container">
+          <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+        </div>
+      </div>
+    </footer>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase-database.js"></script>
     <script src="./src/tracker.js"></script>
   </body>
 </html>

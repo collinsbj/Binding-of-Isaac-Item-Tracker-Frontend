@@ -3,17 +3,25 @@ main {
 }
 
 body {
-  background-color: #b3e5fc;
+  background-image: url("http://www.designbolts.com/wp-content/uploads/2013/02/Subtle-Grunge-Grey-Seamless-Pattern-For-Website-Background.jpg");
+  background-size: 100%;
+  margin: 1rem;
 }
 
 .itemPic {
   filter: drop-shadow(2px 2px 2px #222);
+  margin: 0.5rem;
+  height: 50px;
+  width: auto;
 }
 
-.itemPic {
-  margin: 0.5rem;
-  height: 35px;
-  width: auto;
+.leftPane {
+  width: 30%;
+  z-index: 1000;
+}
+
+.paneContainer {
+  display: flex;
 }
 
 @keyframes disappear {
@@ -39,9 +47,11 @@ body {
   height: auto;
 }
 
+.brand-logo {
+  margin-left: 1rem;
+}
 
-
-#modalImg {
+#modalImg, #modalImgLeft {
   height: 65px;
   width: auto;
 }
@@ -72,9 +82,10 @@ h2 {
   display: none;
 }
 
-ul.futureList li {
+#itemPool ul li, #itemDescription ul li, ul.futureList li, #itemPoolLeft ul li, #itemDescriptionLeft ul li {
 list-style: circle;
-color: dimGray;
+color: lightGray;
+margin-left: 1.5rem;
 }
 
 .itemTop {
@@ -86,4 +97,20 @@ color: dimGray;
 
 #id, #name {
   color: black;
+}
+
+#flavorText, #flavorTextLeft {
+  color: red;
+}
+
+.modal-content ul, .leftPane {
+  font-size: 16px;
+}
+
+.modal, .modal-footer a, .leftPane {
+  color: white;
+}
+
+.leftPaneContent {
+  margin: 1rem;
 }
