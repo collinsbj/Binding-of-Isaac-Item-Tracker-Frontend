@@ -162,3 +162,7 @@ nav {
     font-size: 25px;
   }
 }
+
+.strike {
+  text-decoration: line-through;
+}
