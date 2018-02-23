@@ -1,27 +1,44 @@
+/* @import url('https://fonts.googleapis.com/css?family=Titillium+Web'); */
+
 main {
   margin: 1rem;
 }
 
 body {
-  background-image: url("http://www.designbolts.com/wp-content/uploads/2013/02/Subtle-Grunge-Grey-Seamless-Pattern-For-Website-Background.jpg");
-  background-size: 100%;
-  margin: 1rem;
+  /* background-image: url("https://www.designbolts.com/wp-content/uploads/2013/02/Old-Husk-Grey-Seamless-Pattern-For-Website-Background.jpg");
+  font-family: 'Titillium Web', sans-serif; */
 }
 
 .itemPic {
   filter: drop-shadow(2px 2px 2px #222);
-  margin: 0.5rem;
-  height: 50px;
+  margin: 0.3rem;
+  height: 37px;
   width: auto;
 }
 
 .leftPane {
-  width: 30%;
-  z-index: 1000;
+  width: 300px;
+  z-index: -1;
+  position: fixed;
+  height: 100vh;
+}
+
+.rightPane {
+  margin-left: 310px;
 }
 
 .paneContainer {
+  margin-top: 64px;
   display: flex;
+}
+
+.aboutMain {
+  margin-top: 140px;
+}
+
+.aboutMain {
+  margin-left: 17rem;
+  margin-right: 17rem;
 }
 
 @keyframes disappear {
@@ -42,7 +59,10 @@ body {
   opacity: 0;
   margin: auto;
   margin-top: 64px;
-  top: 0; left: 0; bottom: 0; right: 0;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 75%;
   height: auto;
 }
@@ -51,8 +71,9 @@ body {
   margin-left: 1rem;
 }
 
-#modalImg, #modalImgLeft {
-  height: 65px;
+#modalImg,
+#modalImgLeft {
+  height: 55px;
   width: auto;
 }
 
@@ -82,35 +103,62 @@ h2 {
   display: none;
 }
 
-#itemPool ul li, #itemDescription ul li, ul.futureList li, #itemPoolLeft ul li, #itemDescriptionLeft ul li {
-list-style: circle;
-color: lightGray;
-margin-left: 1.5rem;
+#itemPool ul li,
+#itemDescription ul li,
+ul.futureList li,
+#itemPoolLeft ul li,
+#itemDescriptionLeft ul li {
+  list-style: circle;
+  color: lightGray;
+  margin-left: 1.5rem;
 }
 
 .itemTop {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 1rem -.5rem 1rem;
+  margin: 1rem 1rem -0.5rem 1rem;
 }
 
-#id, #name {
+nav {
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
+
+#id,
+#name {
   color: black;
 }
 
-#flavorText, #flavorTextLeft {
+#flavorText,
+#flavorTextLeft {
   color: red;
 }
 
-.modal-content ul, .leftPane {
+.modal-content ul,
+.leftPane {
   font-size: 16px;
 }
 
-.modal, .modal-footer a, .leftPane {
+.modal,
+.modal-footer a,
+.leftPane {
   color: white;
 }
 
 .leftPaneContent {
   margin: 1rem;
+}
+
+@media (max-width: 800px) {
+  .leftPane {
+    display: none;
+  }
+  .rightPane {
+    margin-left: 0px;
+  }
+  nav .brand-logo {
+    font-size: 25px;
+  }
 }
