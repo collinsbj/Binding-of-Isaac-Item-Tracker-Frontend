@@ -28,10 +28,10 @@ Add New Item is where you, dear reader, can add items that might be missing from
 
 What does the future hold for UBIIT? Geez, you're full of great questions today! Here's a list of features I plan on adding:
 
-    * Add all 534 items, 125 trinkets, consumables, characters, rooms, bosses, monsters, and item synergies
-    * Add the ability to search for items
-    ~~Combining the Item List and Tracker into one, do-it-all, spot~~ Done
-    ~~Add the ability to sort items by different parameters~~ Done
+* Add all 534 items, 125 trinkets, consumables, characters, rooms, bosses, monsters, and item synergies
+* Add the ability to search for items
+* ~~Combining the Item List and Tracker into one, do-it-all, spot~~ Done
+* ~~Add the ability to sort items by different parameters~~ Done
 
 Ideas? Questions? Comments?
 
