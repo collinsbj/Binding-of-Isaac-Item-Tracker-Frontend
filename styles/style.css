@@ -109,7 +109,7 @@ ul.futureList li,
 #itemPoolLeft ul li,
 #itemDescriptionLeft ul li {
   list-style: circle;
-  color: lightGray;
+  color: darkGray;
   margin-left: 1.5rem;
 }
 
