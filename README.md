@@ -35,6 +35,9 @@ What does the future hold for UBIIT? Geez, you're full of great questions today!
 
 Ideas? Questions? Comments?
 
-Please don't hesitate to shoot me an email if you have any feature requests, questions, or comments about UBIIT. Happy grinding!
+Please don't hesitate to shoot me an email at CollinsBJ@me.com if you have any feature requests, questions, or comments about UBIIT. Happy grinding!
 
-CollinsBJ@me.com
+## Local Set Up
+
+* Front End: Fork this repo and clone it locally. No dependencies need to be installed.
+* Back End: Fork this repo, clone it locally, and run npm install in the folder to install all dependencies.
