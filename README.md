@@ -16,9 +16,23 @@ TLDR: A super dope game that will take your soul (in a good way).
 
 The Tracker is where you can keep track of every item you've collected as well as get information about that item. Just found an item but you're not sure what it does? Sweet! Simply find the item in the list and tap on it. All the information about the item you could ever want will pop up for you, so you know exactly what the item you're looking at does. Totes easy.
 
-Now that you know exactly what the item does go ahead and pick it up. The Item Tracker page will also track which items you've already picked up, making it easy to see which items you are still in need of. To switch to "edit" mode simply tap the pencil icon in the top left corner of the page. Now when you tap an item, instead of displaying all of the information of that item, it'll gray out, denoting that you've picked that item up.
+Now that you know exactly what the item does go ahead and pick it up. The Item Tracker page will also track which items you've already picked up, making it easy to see which items you are still in need of. To switch to "edit" mode simply tap the pencil icon in the top left corner of the page. The button will change from black to red to let you know that you are in edit mode.
+
+Edit mode off:
+
+![](./assets/editModeOff.png)
+
+Edit mode on:
+
+![](./assets/editModeOn.png)
+
+Now when you tap an item, instead of displaying all of the information of that item, it'll gray out, denoting that you've picked that item up.
 
 You also have the option of sorting the item list by their ID's or names. Just tap the "Sort By" button in the top right corner and choose how you'd like to sort the item list.
+
+![](./assets/sortByButton.png)
+
+![](./assets/sortOptions.png)
 
 ## Add New Item
 
@@ -41,3 +55,5 @@ Please don't hesitate to shoot me an email at CollinsBJ@me.com if you have any f
 
 * Front End: Fork this repo and clone it locally. No dependencies need to be installed.
 * Back End: Fork this repo, clone it locally, and run npm install in the folder to install all dependencies.
+
+License MIT
